@@ -48,6 +48,7 @@ if (fsrValue < 2500) {
 ## 踩坑记录 | Debug Log
 
 | 问题现象 | 根本原因 | 解决方案 |
+| :--- | :--- | :--- |
 | 程序烧录后不运行 | 时钟树HCLK仅8MHz | CubeMX调整PLL x9，HCLK = 72MHz |
 | HAL_Delay卡死 | SysTick未正确配置 | 改用软件循环延时临时规避，后修复时钟 |
 | 多路PWM引脚冲突 | TIM2_CH2默认PA1与ADC冲突 | 改用TIM2_CH4 (PA3) |
@@ -65,5 +66,3 @@ if (fsrValue < 2500) {
 
 - **GitHub**：[@郑正253263](https://github.com/郑正253263)
 - **B站**：【宇宙逃离A计划的个人空间-哔哩哔哩】 https://b23.tv/yFxUruE
-
----
