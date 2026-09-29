@@ -11,6 +11,7 @@
 ## 演示视频 | Demo
 
  https://www.bilibili.com/video/BV16CeQ6eEKQ/?share_source=copy_web&vd_source=082ebc51ae8051110e422990226c6a00
+ 
 ## 硬件架构 | Hardware
 
 | 模块 | 型号 | 说明 |
@@ -40,6 +41,7 @@ if (fsrValue < 2500) {
     __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, pulse); // 主抓握
     __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_4, pulse); // 大小拇指
 }
+
 ## 踩坑记录 | Debug Log
 
 | 问题现象 | 根本原因 | 解决方案 |
